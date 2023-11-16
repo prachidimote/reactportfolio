@@ -1,0 +1,46 @@
+.services {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: calc(100vh - 100px);
+  overflow: hidden;
+
+  hr{
+    width: 50%;
+    border: none;
+    border-top: solid gray;
+}
+.textContainer{
+    text-align: center;
+}
+
+.btn{
+    width: 150px;
+    background-color: orange;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(40, 40, 81);
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.listContainer{
+    display: flex;
+    flex: 2;
+    max-width: 1366px;
+    margin: auto;
+    overflow: hidden;
+    background-color: transparent;
+    gap: 30px;
+    .box{
+        padding: 25px 10px 60px;
+        background-color: transparent;
+        color: white;
+        border: 0.5px solid gray;
+        border-radius: 25px;
+        margin-top: 30px;
+    }
+   
+}
+}

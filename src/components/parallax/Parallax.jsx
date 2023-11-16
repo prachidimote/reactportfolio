@@ -8,7 +8,7 @@ const Parallax = ({ type }) => {
   const ref = useRef()
   const {scrollYProgress} = useScroll({
     target: ref,
-    offset: ["start start", "end start"]
+    offset: ["start start", "end end"]
   })
 
   const yBg=useTransform(scrollYProgress, [0,1], ["0%", "500%"])
@@ -28,7 +28,7 @@ const Parallax = ({ type }) => {
     }}    
     >    
    
-        <motion.h1 style={{ y: yBg, textAlign: "center"}}>{type === "services" ? "What we do?" : "What we did?"}</motion.h1>
+        <motion.h1 style={{ y: yBg, textAlign: "center"}}>{type === "services" ? "My Work?" : "My Skills?"}</motion.h1>
         <motion.div className='mountains'></motion.div>
         <motion.div className='planets' style={{ 
           backgroundImage: `url(${type==="services" ? "/planets.png" : "/sun.png"})`
