@@ -2,7 +2,24 @@ import './services.scss';
 import { motion } from 'framer-motion';
 import ServiceCard from './ServiceCard';
 
-const Services = () => {
+const variants = {
+  initial: {
+    x: 200,
+    y: 100,
+    opacity: 0,
+  },
+  animate:{
+    X: 0,
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const Services = () => {  
   const servicesData = [
     {
       title: 'Zymmr',
@@ -23,7 +40,8 @@ const Services = () => {
   ];
 
   return (
-    <motion.div className='services'>
+    <motion.div className='services' 
+    >
       <motion.div className='textContainer'>
         <p style={{ color: "white", fontFamily: "sans-serif", fontSize: "20px"}}><b>I focus on building responsive<br/>and user-friendly applications</b></p>
         <hr/>
@@ -31,9 +49,11 @@ const Services = () => {
       <motion.div className='titleContainer'>
         <button className='btn'>My Projects</button>
       </motion.div>
-      <motion.div className='listContainer'>
+      <motion.div className='listContainer' variants={variants}
+    initial="initial"
+    whileInView="animate">
         {servicesData.map((service, index) => (
-          <div className='box' key={index}><ServiceCard title={service.title} description={service.description} /></div>
+          <motion.div className='box' whileHover={{ background: "lightgray", color: "black"}} key={index}><ServiceCard title={service.title} description={service.description} /></motion.div>
         ))}
       </motion.div>
     </motion.div>

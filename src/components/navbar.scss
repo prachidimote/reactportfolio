@@ -1,5 +1,6 @@
 .navbar{
-   height: 100px;
+   height: 80px;
+   background-color: rgb(3, 3, 69);
    
 .wrapper{
     max-width: 1366px;
@@ -16,7 +17,9 @@ span{
 
 .social{
     display: flex;
+    margin-right: 70px;
     gap: 20px;
+    
 }
 
 img{

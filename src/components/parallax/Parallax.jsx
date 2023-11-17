@@ -28,7 +28,7 @@ const Parallax = ({ type }) => {
     }}    
     >    
    
-        <motion.h1 style={{ y: yBg, textAlign: "center"}}>{type === "services" ? "My Work?" : "My Skills?"}</motion.h1>
+        <motion.h1 style={{ y: yBg, textAlign: "center"}}>{type === "services" ? "My Work?" : "My Skils"}</motion.h1>
         <motion.div className='mountains'></motion.div>
         <motion.div className='planets' style={{ 
           backgroundImage: `url(${type==="services" ? "/planets.png" : "/sun.png"})`

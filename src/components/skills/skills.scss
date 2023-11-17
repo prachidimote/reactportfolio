@@ -1,0 +1,15 @@
+.skills{
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  overflow: hidden;
+  height: calc(100vh - 100px);
+
+  .box{
+    background-color: transparent;
+    height: 90px;
+    gap: 50px;
+    margin-top: 160px;
+    display: flex;
+    flex: 2;
+  }
+}
