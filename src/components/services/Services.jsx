@@ -1,6 +1,7 @@
 import './services.scss';
 import { motion } from 'framer-motion';
 import ServiceCard from './ServiceCard';
+// import { useRef } from 'react';
 
 const variants = {
   initial: {
@@ -20,6 +21,8 @@ const variants = {
 };
 
 const Services = () => {  
+  // const ref = useRef();
+  // const isInView = useInView(ref,{margin:"-100px"})
   const servicesData = [
     {
       title: 'Zymmr',
@@ -50,8 +53,11 @@ const Services = () => {
         <button className='btn'>My Projects</button>
       </motion.div>
       <motion.div className='listContainer' variants={variants}
-    initial="initial"
-    whileInView="animate">
+      initial="initial"
+    whileInView="animate"
+    // ref={ref}
+    // animate={isInView && "animate"}
+    >
         {servicesData.map((service, index) => (
           <motion.div className='box' whileHover={{ background: "lightgray", color: "black"}} key={index}><ServiceCard title={service.title} description={service.description} /></motion.div>
         ))}
