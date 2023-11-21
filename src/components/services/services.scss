@@ -3,6 +3,8 @@
   height: calc(100vh - 100px);
   overflow: hidden;
 
+ 
+
   hr{
     width: 50%;
     border: none;
@@ -44,3 +46,16 @@
    
 }
 }
+
+@media screen and (max-width: 768px) {
+    .listContainer {
+      flex-direction: column;
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 700px) {
+    .btn {
+      margin-left: 0;
+    }
+  }

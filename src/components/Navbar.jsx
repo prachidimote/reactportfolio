@@ -14,8 +14,8 @@ function Navbar() {
             transition={{duration: 0.5}}
             ></motion.span>
             <div className='social'>
-                <a href='linkedinicon'><img src='/linkedinicon.png' alt='image' style={{height: "45px", width: "45px"}}/></a>
-                <a href='github2'><img src='/github2.png' alt='image' style={{height:"40px", width:"40px", borderRadius:"10px"}} /></a>
+                <a href='https://www.linkedin.com/in/prachi-dimote-47a187191/'><img src='/linkedinicon.png' alt='image' style={{height: "45px", width: "45px"}}/></a>
+                <a href='https://github.com/prachidimote'><img src='/github2.png' alt='image' style={{height:"40px", width:"40px", borderRadius:"10px"}} /></a>
             </div>
         </div>
     </div>

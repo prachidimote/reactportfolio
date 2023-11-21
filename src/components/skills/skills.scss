@@ -3,6 +3,21 @@
   overflow: hidden;
   height: calc(100vh - 100px);
 
+  img{
+    height: 110px;
+    padding: 30px;
+    margin-left: 50px;
+    
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 50px;
+    row-gap: 30px;
+   
+  }
+
   .box{
     background-color: transparent;
     height: 90px;

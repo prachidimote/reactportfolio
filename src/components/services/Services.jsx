@@ -46,7 +46,7 @@ const Services = () => {
     <motion.div className='services' 
     >
       <motion.div className='textContainer'>
-        <p style={{ color: "white", fontFamily: "sans-serif", fontSize: "20px"}}><b>I focus on building responsive<br/>and user-friendly applications</b></p>
+        <p style={{ color: "white", fontFamily: "sans-serif", fontSize: "20px"}}><b>My Recent Projects</b></p>
         <hr/>
       </motion.div>
       <motion.div className='titleContainer'>
